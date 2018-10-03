@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Кухни даром</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="uk-container">
+            <div class="header__inner">
+                <img class="header__logo" src="img/logo.png" alt="">
+                <nav class="header-nav">
+                    <ul class="header-nav__link-list">
+                        <li><a class="header-nav__link" href="#">Кухни</a></li>
+                        <li><a class="header-nav__link" href="#">Оплата</a></li>
+                        <li><a class="header-nav__link" href="#">Контакты</a></li>
+                        <li><button class="gradient-btn" type="button">Вызвать замерщика</button></li>
+                    </ul>
+                </nav>
+                <div class="phone">
+                    <button class="phone__btn" type="button">
+                        <svg class="phone__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.077 348.077">
+                            <path fill="#FFF" d="M340.273 275.083l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518.744l-27.082 27.076a792.327 792.327 0 0 1-5.344-2.973c-17.102-9.476-40.509-22.464-65.14-47.113-24.704-24.701-37.704-48.144-47.209-65.257-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149 8.936-8.947c11.097-11.1 11.403-28.826.721-39.521L73.39 8.194c-10.682-10.68-28.421-10.356-39.518.744l-15.15 15.237.414.411c-5.08 6.482-9.325 13.958-12.484 22.02C3.74 54.28 1.927 61.603 1.098 68.941-6 127.785 20.89 181.564 93.866 254.541c100.875 100.868 182.167 93.248 185.674 92.876 7.638-.913 14.958-2.738 22.397-5.627 7.992-3.122 15.463-7.361 21.941-12.43l.331.294 15.348-15.029c11.074-11.098 11.393-28.83.716-39.542z"/>
+                        </svg>
+                    </button>  
+                    <a class="phone__text" href="tel:+74732345645"><span>+7 (473)</span> 234 56 45</a>
+                </div>
+                <button class="header__menu-btn menu-btn" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124">
+                        <g fill="#FFF">
+                            <path d="M112 6H12C5.4 6 0 11.4 0 18s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12zM112 50H12C5.4 50 0 55.4 0 62s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12zM112 94H12c-6.6 0-12 5.4-12 12s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12z"/>
+                        </g>
+                    </svg>   
+                </button>  
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="uk-container">
+            <div class="intro__inner">
+                <div class="intro__title">
+                    Какая кухня
+                    вам нужна?
+                </div>
+                <form class="filter">
+                    <div class="filter__inner">
+                        <fieldset class="filter__fieldset">
+                            <legend class="filter__legend">Цена</legend>
+                            <div class="filter__fields">
+                                <div class="filter__row">
+                                    <input class="filter__input" id="price-1" type="checkbox" name="price" value="до 5000">
+                                    <label class="filter__label" for="price-1">до 5000</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input class="filter__input" id="price-2" type="checkbox" name="price" value="от 5000 до 100000">
+                                    <label class="filter__label" for="price-2">от 5000 до 100000</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input class="filter__input" id="price-3" type="checkbox" name="price" value="от 100000">   
+                                    <label class="filter__label" for="price-3">от 100000</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="filter__fieldset">
+                            <legend class="filter__legend">Тип кухни</legend>
+                            <div class="filter__fields">
+                                <div class="filter__row">
+                                    <input class="filter__input" id="type-1" type="checkbox" name="type" value="Прямая">
+                                    <label class="filter__label" for="type-1">Прямая</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input class="filter__input" id="type-2" type="checkbox" name="type" value="Угловая">
+                                    <label class="filter__label" for="type-2">Угловая</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input class="filter__input" id="type-3" type="checkbox" name="type" value="П-образная">
+                                    <label class="filter__label" for="type-3">П-образная</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input class="filter__input" id="type-4" type="checkbox" name="type" value="Нестандартные
+                                    решения">
+                                    <label class="filter__label" for="type-4">Нестандартные<br> решения</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>  
+                    <button class="filter__btn" type="submit">Подобрать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section class="variants">
+        <div class="uk-container">
+            <h2 class="variants__title">
+                Подходящие варианты
+            </h2>
+            <div class="variants__pool">
+                <div class="variants__grid">
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kitchen">
+                            <div class="kitchen__image uk-cover-container">
+                                <img src="img/kitchen.jpg" data-uk-cover alt="">
+                            </div>
+                            <div class="kitchen__title">
+                                Кухня Базис Nicole 14
+                            </div>
+                            <ul class="kitchen__properties">
+                                <li>
+                                    1600х3000мм
+                                </li>
+                                <li>
+                                    Массив
+                                </li>
+                            </ul>
+                            <div class="kitchen__price">
+                                39 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <button class="variants__more" type="button">Смотреть еще</button>
+        </div>
+    </section>
+    <section class="gifts">
+        <div class="uk-container">
+            <h2 class="gifts__title">
+                Дарим с кухней
+            </h2>   
+            <div class="gifts__pool">
+                <div>
+                    <div class="gift">
+                        <div class="gift__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 489.663 489.663">
+                                    <path fill="#FFF" d="M467.144 103.963l5.6-5.6c22.5-22.5 22.5-58.9 0-81.4-22.4-22.6-58.9-22.6-81.3-.1l-5.6 5.6 81.3 81.5zM324.944 297.763v124.5h-257.5v-257.5h124.5l67.4-67.4h-244.6c-8.1 0-14.7 6.6-14.7 14.7v362.9c0 8.1 6.6 14.7 14.7 14.7h362.9c8.1 0 14.7-6.6 14.7-14.7v-244.6l-67.4 67.4z"/>
+                                    <path fill="#FFF" d="M360.644 47.663l-228.4 228.4-18.2 99.6 99.6-18.2 228.4-228.4z"/>
+                            </svg>
+                                  
+                        </div>
+                        <div class="gift__title">Проект</div>
+                        <div class="gift__desc">
+                            Курьерская доставка по России, региональные пункты самовывоза, доставка почтой РФ, "Dimex", DHL, Spring Global
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gift">
+                        <div class="gift__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="29" viewBox="0 0 512 512">
+                                <path fill="#FFF" d="M155.074 200.122c-29.618 0-53.714 24.097-53.714 53.714s24.097 53.714 53.714 53.714 53.714-24.097 53.714-53.714c0-29.618-24.096-53.714-53.714-53.714z"/>
+                                <path fill="#FFF" d="M345.86 337.779v-35.713h-35.713v-45.025c0-23.266-5.16-45.344-14.38-65.169l26.157-12.269c-14.23-30.338-36.469-56.325-64.31-75.15l-16.143 23.875c-24.706-16.637-54.438-26.359-86.399-26.359C69.566 101.967 0 171.532 0 257.041v88.312c0 32.18 26.181 58.361 58.361 58.361H345.86V368h135.92v42.032H512v-72.253H345.86zm-190.787-.008c-46.281 0-83.935-37.653-83.935-83.935s37.653-83.935 83.935-83.935c46.281 0 83.935 37.653 83.935 83.935s-37.654 83.935-83.935 83.935z"/>
+                            </svg>       
+                        </div>
+                        <div class="gift__title">Замер</div>
+                        <div class="gift__desc">
+                            Курьерская доставка по России, региональные пункты самовывоза, доставка почтой РФ, "Dimex", DHL, Spring Global
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gift">
+                        <div class="gift__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="32" viewBox="0 0 612 612">
+                                <path fill="#FFF" d="M21.474 377.522V117.138c0-14.469 11.729-26.199 26.199-26.199h260.25c14.469 0 26.198 11.73 26.198 26.199v260.385a8.732 8.732 0 0 1-8.733 8.733H30.207a8.733 8.733 0 0 1-8.733-8.734zm210.16 89.202c0 30.01-24.329 54.338-54.338 54.338s-54.338-24.328-54.338-54.338c0-30.011 24.329-54.338 54.338-54.338s54.338 24.327 54.338 54.338zm-27.17 0c0-15.005-12.164-27.169-27.169-27.169s-27.17 12.164-27.17 27.169 12.165 27.17 27.17 27.17 27.169-12.165 27.169-27.17zm-73.969-54.339H8.733A8.733 8.733 0 0 0 0 421.118v26.495a8.733 8.733 0 0 0 8.733 8.733h97.598c2.548-17.484 11.373-32.928 24.164-43.961zm385.443 54.339c0 30.01-24.329 54.338-54.338 54.338-30.01 0-54.338-24.328-54.338-54.338 0-30.011 24.328-54.338 54.338-54.338 30.009-.001 54.338 24.327 54.338 54.338zm-27.168 0c0-15.005-12.165-27.169-27.17-27.169-15.006 0-27.169 12.164-27.169 27.169s12.164 27.17 27.169 27.17 27.17-12.165 27.17-27.17zM612 421.118v26.495a8.733 8.733 0 0 1-8.733 8.733h-70.704c-5.057-34.683-34.906-61.427-70.961-61.427-36.062 0-65.912 26.745-70.969 61.427H248.261c-2.549-17.483-11.373-32.928-24.164-43.961h134.994V162.594c0-9.646 7.82-17.466 17.466-17.466h82.445a69.86 69.86 0 0 1 57.9 30.77l53.15 78.721a69.865 69.865 0 0 1 11.962 39.094v118.672h21.253a8.733 8.733 0 0 1 8.733 8.733zm-88.592-164.483l-42.501-60.393a8.734 8.734 0 0 0-7.142-3.707H407.47a8.734 8.734 0 0 0-8.733 8.733v60.393a8.732 8.732 0 0 0 8.733 8.733h108.798c7.074 0 11.212-7.973 7.14-13.759z"/>
+                                </svg> 
+                        </div>
+                        <div class="gift__title">Доставку</div>
+                        <div class="gift__desc">
+                            Курьерская доставка по России, региональные пункты самовывоза, доставка почтой РФ, "Dimex", DHL, Spring Global
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gift">
+                        <div class="gift__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 512 512">
+                                <path fill="#FFF" d="M497 0H376.5c-8.284 0-15 6.716-15 15v105.5H256c-8.284 0-15 6.716-15 15V241H135.5c-8.284 0-15 6.716-15 15v105.5H15c-8.284 0-15 6.716-15 15V497c0 8.284 6.716 15 15 15h482c8.284 0 15-6.716 15-15V15c0-8.284-6.716-15-15-15z"/>
+                            </svg>
+                                  
+                                  
+                        </div>
+                        <div class="gift__title">Подъем</div>
+                        <div class="gift__desc">
+                            Курьерская доставка по России, региональные пункты самовывоза, доставка почтой РФ, "Dimex", DHL, Spring Global
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gift">
+                        <div class="gift__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 217.794 217.794">
+                                <path fill="#FFF" d="M113.595 133.642l-5.932-13.169a57.493 57.493 0 0 0 14.307-15.209l13.507 5.118a5 5 0 0 0 6.447-2.904l4.964-13.103a4.997 4.997 0 0 0-2.905-6.447l-13.507-5.118a57.471 57.471 0 0 0-.637-20.871l13.169-5.932a5 5 0 0 0 2.505-6.613l-5.755-12.775a5 5 0 0 0-6.612-2.505l-13.169 5.932a57.493 57.493 0 0 0-15.209-14.307l5.118-13.507a5 5 0 0 0-2.904-6.447L93.88.82a5.002 5.002 0 0 0-6.447 2.905l-5.117 13.506a57.327 57.327 0 0 0-20.872.636L55.513 4.699A5 5 0 0 0 48.9 2.194L36.124 7.949a5 5 0 0 0-2.505 6.612l5.932 13.169a57.493 57.493 0 0 0-14.307 15.209l-13.507-5.118a5 5 0 0 0-6.447 2.905L.326 53.828a5 5 0 0 0 2.904 6.447l13.507 5.118a57.471 57.471 0 0 0 .637 20.871l-13.17 5.932a5 5 0 0 0-2.505 6.613l5.755 12.775a4.998 4.998 0 0 0 6.612 2.505l13.169-5.932a57.462 57.462 0 0 0 15.209 14.307l-5.118 13.507a5 5 0 0 0 2.904 6.447l13.103 4.964a5.008 5.008 0 0 0 3.825-.117 5 5 0 0 0 2.622-2.788l5.117-13.506a57.348 57.348 0 0 0 20.872-.636l5.931 13.168a5 5 0 0 0 6.613 2.505l12.775-5.754a5 5 0 0 0 2.507-6.612zm-8.286-47.529c-4.963 13.1-17.706 21.901-31.709 21.901-4.096 0-8.135-.744-12.005-2.21-8.468-3.208-15.18-9.522-18.899-17.779-3.719-8.256-4-17.467-.792-25.935 4.963-13.1 17.706-21.901 31.709-21.901 4.096 0 8.135.744 12.005 2.21 8.468 3.208 15.18 9.522 18.899 17.778 3.72 8.257 4.001 17.468.792 25.936zm111.169 68.276a5 5 0 0 0-3.469-1.615l-9.418-.404a43.204 43.204 0 0 0-4.633-12.697l6.945-6.374a4.999 4.999 0 0 0 .303-7.064l-6.896-7.514a5 5 0 0 0-3.47-1.615 5.041 5.041 0 0 0-3.595 1.312l-6.944 6.374a43.211 43.211 0 0 0-12.254-5.702l.404-9.418a5 5 0 0 0-4.782-5.209l-10.189-.437c-2.745-.104-5.091 2.023-5.209 4.781l-.404 9.418a43.251 43.251 0 0 0-12.697 4.632l-6.374-6.945a5 5 0 0 0-7.064-.303l-7.514 6.896a4.999 4.999 0 0 0-.303 7.064l6.374 6.945a43.198 43.198 0 0 0-5.702 12.254l-9.417-.404c-2.747-.111-5.092 2.022-5.21 4.781l-.437 10.189a4.998 4.998 0 0 0 4.782 5.21l9.417.403a43.247 43.247 0 0 0 4.632 12.698l-6.944 6.374a5 5 0 0 0-.303 7.064l6.896 7.514a5 5 0 0 0 3.47 1.615 5.029 5.029 0 0 0 3.595-1.312l6.944-6.374a43.211 43.211 0 0 0 12.254 5.702l-.404 9.418a5 5 0 0 0 4.781 5.209l10.189.437a5 5 0 0 0 5.21-4.781l.404-9.418a43.251 43.251 0 0 0 12.697-4.632l6.374 6.945a5 5 0 0 0 7.064.303l7.514-6.896a4.999 4.999 0 0 0 .303-7.064l-6.374-6.945a43.198 43.198 0 0 0 5.702-12.254l9.417.404c2.756.106 5.091-2.022 5.21-4.781l.437-10.189a4.998 4.998 0 0 0-1.312-3.595zm-56.321 29.564c-12.844-.55-22.846-11.448-22.295-24.292.536-12.514 10.759-22.317 23.273-22.317.338 0 .678.007 1.019.022 12.844.551 22.846 11.448 22.295 24.292a23.276 23.276 0 0 1-24.292 22.295z"/>
+                                </svg>
+                                   
+                        </div>
+                        <div class="gift__title">Установку</div>
+                        <div class="gift__desc">
+                            Курьерская доставка по России, региональные пункты самовывоза, доставка почтой РФ, "Dimex", DHL, Spring Global
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gift">
+                        <div class="gift__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 1708 1708.749">
+                                <g fill="#FFF" stroke="#FFF">
+                                    <path d="M224.941 305.355a30.498 30.498 0 0 1 14.121 8l435.075 435.082 78.726-78.718-435.082-435.082a30.533 30.533 0 0 1-8.008-14.157l-27.382-109.156L100.867 7.547l-88.89 88.887 103.808 181.648zm0 0"/>
+                                    <path d="M611.824 1297.79l690.395-690.407a30.458 30.458 0 0 1 28.91-8.024c90.898 23.297 187.45 3.11 261.43-54.609 73.992-57.723 117.03-146.488 116.535-240.32 0-5.715-.168-11.473-.54-17.282l-160.577 160.559a30.427 30.427 0 0 1-31.141 7.352l-182.637-60.887a30.392 30.392 0 0 1-19.262-19.23l-60.87-182.641c-3.653-10.922-.805-22.992 7.351-31.145L1421.992.586c-96.695-6.016-190.441 34.61-252.203 109.25-61.754 74.656-84.07 174.351-60.05 268.2a30.42 30.42 0 0 1-8 28.925l-690.384 690.36a30.71 30.71 0 0 1-28.918 8.015 300.648 300.648 0 0 0-73.582-9.469c-131.097-.863-248.234 81.781-291.398 205.598-43.14 123.805-2.738 261.355 100.512 342.16s246.476 86.984 356.289 15.344c109.82-71.637 161.89-205.2 129.527-332.27-2.574-10.37.469-21.36 8.04-28.91zM382.95 1522.03H234.785l-73.074-121.754 73.074-121.773H382.95l73.059 121.773zm117.477-356.363l669.672-669.68 43.035 43.043-669.672 669.68zm0 0M1459.5 1692.867c67.8 25.492 144.242 8.961 195.465-42.258 51.226-51.234 67.762-127.687 42.258-195.472zm0 0"/>
+                                    <path d="M1654.969 1389.2l-341.887-342.024c-37.71 31.699-93.398 29.289-128.254-5.524-34.86-34.804-37.316-90.476-5.672-128.226l-48.418-48.477-261.355 261.367 48.71 48.707c37.712-31.699 93.407-29.296 128.243 5.504 34.855 34.813 37.328 90.493 5.68 128.246l341.597 341.778c3.727 3.726 7.66 7.18 11.633 10.539l260.27-260.27c-3.352-3.98-6.82-7.898-10.547-11.62zm-180.477 123.905l-304.394-304.394 43.035-43.043 304.402 304.41zm0 0"/>
+                                </g>
+                            </svg> 
+                        </div>
+                        <div class="gift__title">Сервис</div>
+                        <div class="gift__desc">
+                            Курьерская доставка по России, региональные пункты самовывоза, доставка почтой РФ, "Dimex", DHL, Spring Global
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gift">
+                        <div class="gift__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" eight="40" viewBox="0 0 454.656 454.656">
+                                <path fill="#FFF" d="M454.656 227.584l-38.912-50.688 8.704-62.976-59.392-23.552-23.552-59.392-62.976 8.704-51.2-39.424-50.688 38.912-62.976-8.704-23.552 59.392-59.392 23.552 8.704 62.976L0 227.584l38.912 50.688-8.704 62.976L89.6 364.8l23.552 59.392 62.976-8.704 50.688 38.912 50.688-38.912 62.976 8.704 23.552-59.392 59.392-24.064-8.704-62.976 39.936-50.176zm-245.76 73.728l-75.776-62.464 16.384-19.968 56.32 46.08 96.256-111.104 19.456 16.896-112.64 130.56z"/>
+                            </svg>   
+                        </div>
+                        <div class="gift__title">Гарантию</div>
+                        <div class="gift__desc">
+                            Курьерская доставка по России, региональные пункты самовывоза, доставка почтой РФ, "Dimex", DHL, Spring Global
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gift">
+                        <div class="gift__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="37" viewBox="0 0 512 512">
+                                <path fill="#FFF" d="M272.696 280.342h183.118V512H272.696zM56.186 280.342h183.118V512H56.186zM398.762 94.432a63.52 63.52 0 0 0 7.772-30.521C406.535 28.67 377.864 0 342.624 0c-26.065 0-52.735 13.468-73.168 36.951A130.25 130.25 0 0 0 256 55.511a130.25 130.25 0 0 0-13.456-18.56C222.111 13.468 195.442 0 169.376 0c-35.24 0-63.911 28.671-63.911 63.911a63.512 63.512 0 0 0 7.772 30.521H26.2v152.519h213.104V94.432h33.391v152.519H485.8V94.432h-87.038zm-229.386 0c-16.828 0-30.52-13.692-30.52-30.521s13.692-30.52 30.52-30.52c30.299 0 59.106 30.993 67.489 61.04h-67.489zm173.248 0h-67.489c8.383-30.048 37.19-61.04 67.489-61.04 16.828 0 30.52 13.692 30.52 30.52-.001 16.829-13.692 30.52-30.52 30.52z"/>
+                            </svg>      
+                        </div>
+                        <div class="gift__title">Подарок</div>
+                        <div class="gift__desc">
+                            Курьерская доставка по России, региональные пункты самовывоза, доставка почтой РФ, "Dimex", DHL, Spring Global
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="payment">
+        <div class="uk-container">
+            <div class="payment__content">
+                <h2 class="payment__title">
+                    Как оплатить?
+                </h2>
+                <ul class="payment__list">
+                    <li>
+                        <div class="payment__variant">Наличными</div>
+                        <div class="payment__text">
+                            Оплата наличными возможна только при доставке курьерской службой и при самовывозе
+                            красивый рисунок.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="payment__variant">Картой</div>
+                        <div class="payment__text">
+                            <img class="payment__system" src="img/visa.png" width="57" height="17" alt="visa">
+                            <img class="payment__system" src="img/mir.png" width="57" height="17" alt="mir">
+                            <img class="payment__system" src="img/mastercard.png" width="55" height="34" alt="mastercard">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="payment__variant">В рассрочку</div>
+                    </li>
+                    <li>
+                        <div class="payment__variant">Б/Н от юр. л / ип</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="payment__bg"></div>
+    </section>
+    <section class="credit">
+        <div class="uk-container">
+            <div class="credit__inner">
+                <div class="credit__title-container">
+                    <h2 class="credit__title">Рассрочка <span>на кухни</span></h2>
+                </div>
+                <div class="credit__content">
+                    <div class="credit__subtitle">
+                        Различные варианты рассрочки
+                    </div>
+                    <div class="credit__desc">
+                        Заполните онлайн-заявку. Мы сообщим о решении через пару минут. Закажите доставку курьером или заберите в ближайшем офисе
+                    </div>
+                    <div class="credit__variants">
+                        <div class="credit__variant-item">
+                            0 / 0 / 24 
+                        </div>
+                        <div class="credit__variant-item">
+                            0 / 0 / 12
+                        </div>
+                        <div class="credit__variant-item">
+                            10 / 0 / 10
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/rus-standart.png" width="118" height="54" alt="rus-standart">
+                    </div>
+                </div>
+                <div class="credit__feedback-container">
+                    <form class="feedback">
+                        <div class="feedback__title">
+                            Оставить заявку
+                        </div>
+                        <div class="feedback__row">
+                            <label class="feedback__label" for="name">
+                                Имя
+                            </label>
+                            <input class="feedback__input" type="text" name="name" id="name"> 
+                        </div>
+                        <div class="feedback__row">
+                            <label class="feedback__label" for="phone">
+                                Телефон
+                            </label>
+                            <input class="feedback__input" type="tel" name="name" id="phone"> 
+                        </div>
+                        <div class="feedback__row">
+                            <label class="feedback__label" for="email">
+                                E-mail
+                            </label>
+                            <input class="feedback__input" type="email" name="email" id="email" required> 
+                        </div>
+                        <button class="feedback__submit" type="submit">Отправить</button>
+                        <div class="feedback__agreement">
+                            Нажимая «Отправить», вы даете согласие на обработку <a href="#">персональных данных</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="uk-container">
+            <h2 class="about__title">
+                О фабрике 
+            </h2>
+            <div class="about__numbers">
+                <div class="about__number">
+                    <div class="about__number-number">
+                        12
+                    </div>
+                    <div class="about__number-text">
+                        лет на рынке
+                    </div>
+                </div>
+                <div class="about__number">
+                    <div class="about__number-number">
+                        425
+                    </div>
+                    <div class="about__number-text">
+                        выполненных проектов
+                    </div>
+                </div>
+                <div class="about__number">
+                    <div class="about__number-number">
+                        150
+                    </div>
+                    <div class="about__number-text">
+                        вариантов кухонь
+                    </div>
+                </div>
+                <div class="about__number">
+                    <div class="about__number-number">
+                        150
+                    </div>
+                    <div class="about__number-text">
+                        вариантов кухонь
+                    </div>
+                 </div>
+            </div>
+            <div class="fabric-slider">
+                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
+                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@m">
+                        <li>
+                            <img src="img/fabric-1.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="img/fabric-2.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="img/fabric-1.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="img/fabric-3.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="img/fabric-4.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="img/fabric-5.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="img/fabric-5.jpg" alt="">
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="bundle.js"></script>
+</body>
+</html>

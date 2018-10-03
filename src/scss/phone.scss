@@ -1,0 +1,29 @@
+.phone {
+    
+}
+
+.phone__btn {
+    margin-right: 11px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.phone__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.phone__text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    span {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}

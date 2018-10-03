@@ -1,0 +1,19 @@
+.intro {
+    padding: 190px 0 70px;
+    background: url('../img/intro-bg.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro__title {
+    width: 450px;
+    margin-right: 80px;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}

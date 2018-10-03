@@ -1,0 +1,38 @@
+.about {
+    padding: 70px 0 50px;
+    background: #1f1f1f url('../img/about.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.about__title {
+    margin-bottom: 100px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.about__numbers {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 115px;
+}
+
+.about__number {
+    text-align: center;
+}
+
+.about__number-number {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 1;
+}   
+
+.about__number-text {
+    color: #fff;    
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+}

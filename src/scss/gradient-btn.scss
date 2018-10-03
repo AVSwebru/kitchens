@@ -1,0 +1,15 @@
+.gradient-btn {
+    text-align: center;
+    border-image: linear-gradient(to right, #7ac398,#01abce) 1 / 1px;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: background-image 0.25s;
+    padding: 15px 40px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    &:hover {
+        background-image: linear-gradient(to bottom, #7ac398, #01abce);
+        transition: background-image 0.25s;
+    }
+}

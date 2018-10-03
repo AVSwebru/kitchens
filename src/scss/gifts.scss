@@ -1,0 +1,19 @@
+.gifts {
+    padding: 60px 0 100px;
+    background: url('../img/gifts-bg.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.gifts__title {
+    margin-bottom: 60px;
+    color: #000000;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.gifts__pool {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 260px);
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+}
