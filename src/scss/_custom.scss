@@ -7,11 +7,8 @@ $base-color:#676767;
 
 $container-max-width: 1140px;
 $global-medium-gutter: 15px;
-// $global-link-color: $theme-color-1;
-// $base-link-text-decoration: none;
-// $global-link-hover-color: $theme-color-1;
-// $base-link-hover-text-decoration: underline;
 
+$modal-dialog-width: 360px;
 
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";

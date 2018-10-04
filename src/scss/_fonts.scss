@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto/Roboto-Bold.woff');
-    src: local('Roboto Bold'), local('Roboto-Bold');
+    src: url('../fonts/Roboto/Roboto-Bold.woff'),
+        local('Roboto Bold'), local('Roboto-Bold');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto/Roboto-Regular.woff');
-    src: local('Roboto'), local('Roboto-Regular');
+    src: url('../fonts/Roboto/Roboto-Regular.woff'),
+        local('Roboto'), local('Roboto-Regular');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto/Roboto-Light.woff');
-    src: local('Roboto Light'), local('Roboto-Light');
+    src: url('../fonts/Roboto/Roboto-Light.woff'),
+        local('Roboto Light'), local('Roboto-Light');
     font-weight: 300;
     font-style: normal;
 }

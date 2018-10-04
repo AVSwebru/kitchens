@@ -1,7 +1,9 @@
 .gifts {
-    padding: 60px 0 100px;
+    padding: 50px 0 100px;
     background: url('../img/gifts-bg.jpg') 50% 50% no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 1;
 }
 
 .gifts__title {

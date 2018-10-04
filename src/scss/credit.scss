@@ -1,5 +1,5 @@
 .credit {
-    padding: 35px 0 120px;
+    padding: 25px 0 120px;
     background-image:
         url('../img/credit-bg.png'),
         linear-gradient(to right, #79c398 15%, #02abcd 100%);
@@ -19,19 +19,21 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-right: 60px;
+    margin-right: 71px;
 }
 
 .credit__title {
     opacity: 0.75;
     color: #000000;
-    font-size: 60px;
+    font-size: 69px;
     font-weight: 800;
+    line-height: 1.2;
     text-transform: uppercase;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
+    letter-spacing: -0.8px;
     span {
-        letter-spacing: 8.1px;
+        letter-spacing: 7px;
     }
 }
 
@@ -41,17 +43,16 @@
 }
 
 .credit__subtitle {
-    margin-bottom: 27px;
+    margin-bottom: 19px;
     color: #ffffff;
     font-size: 30px;
-    font-weight: 400;
 }
 
 .credit__desc {
     margin-bottom: 60px;
     color: #32635f;
     font-size: 15px;
-    font-weight: 400;
+    line-height: 1.2;
 }
 
 .credit__variants {
@@ -62,9 +63,12 @@
 
 .credit__variant-item {
     margin-right: 7px;
-    padding: 25px;
+    width: 178px;
+    box-sizing: border-box;
+    padding: 25px 5px;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 2px;
+    text-align: center;
     color: #ffffff;
     font-size: 34px;
     font-weight: 700;
@@ -89,4 +93,10 @@
 
 .credit__feedback-container {
     position: relative;
+}
+
+.credit__feedback {
+    position: absolute;
+    top: -55px;
+    left: 0;  
 }

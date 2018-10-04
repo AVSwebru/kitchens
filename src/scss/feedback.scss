@@ -2,9 +2,6 @@
     width: 360px;
     box-sizing: border-box;
     padding: 55px 52px 46px;
-    position: absolute;
-    top: -55px;
-    left: 0;  
     border: 5px solid #add301;
     border-radius: 12px;
     background-color: #fff;
@@ -19,12 +16,12 @@
 }
 
 .feedback__row {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 
 .feedback__label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     color: #878787;
     font-size: 15px;
     font-weight: 400;
@@ -45,14 +42,16 @@
 
 .feedback__submit {
     width: 100%;
-    margin-bottom: 20px;
-    padding: 15px;
+    margin: 13px 0 16px;
+    padding: 13px 0 12px;
     box-shadow: 1px 2px 10px rgba(140, 150, 97, 0.75);
     background-color: #add301;
     background-image: linear-gradient(to top, #abd002 0%, #bae107 100%);
     transition: background-image 0.25s;
     border: none;
     cursor: pointer;
+    font-size: 15px;
+    border-radius: 2px;
     &:hover {
         background-image: linear-gradient(to top, #bae107 0%, #abd002 100%);
         transition: background-image 0.25s;
@@ -67,3 +66,4 @@
         color: #86a206;
     }
 }
+

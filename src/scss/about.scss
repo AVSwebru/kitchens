@@ -1,5 +1,5 @@
 .about {
-    padding: 70px 0 50px;
+    padding: 57px 0 0;
     background: #1f1f1f url('../img/about.jpg') 50% 50% no-repeat;
     background-size: cover;
     position: relative;
@@ -7,7 +7,7 @@
 }
 
 .about__title {
-    margin-bottom: 100px;
+    margin-bottom: 82px;
     color: #fff;
     font-size: 60px;
     font-weight: 700;
@@ -16,7 +16,7 @@
 .about__numbers {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 115px;
+    margin-bottom: 20px;
 }
 
 .about__number {
@@ -24,6 +24,7 @@
 }
 
 .about__number-number {
+    margin-bottom: 9px;
     color: #fff;
     font-size: 72px;
     font-weight: 300;

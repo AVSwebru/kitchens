@@ -1,0 +1,19 @@
+.to-top {
+    position: absolute;
+    right: 0;
+    top: -26px;
+    padding: 13px 18px;
+    background-color: #fff;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.to-top__arrow {
+    color: #232728;
+}
+
+.to-top__text {
+    color: #979891;
+    font-size: 16px;
+}

@@ -1,11 +1,12 @@
 .payment {
-    padding: 55px 0 83px;
+    padding: 40px 0 83px;
     background-color: #e3e4da;
     position: relative;
+    z-index: 2;
 }
 
 .payment__title {
-    margin-bottom: 55px;
+    margin-bottom: 5px;
     color: #2c2c2c;
     font-size: 60px;
     font-weight: 700;
@@ -30,7 +31,7 @@
     padding: 0;
     list-style: none;
     li {
-        padding: 27px 0;
+        padding: 32px 0 30px;
         position: relative;
         &::before {
             content: '';
@@ -51,10 +52,11 @@
 }
 
 .payment__text {
-    margin-top: 15px;
+    margin-top: 10px;
     color: #686868;
     font-size: 15px;
     font-weight: 400;
+    line-height: 1.25;
 }
 
 .payment__system {

@@ -16,7 +16,7 @@
             transition: transform 0.25s;
         }
         .gift__title {
-            transform: translateY(-90px);
+            transform: translateY(-85px);
             transition: transform 0.25s;
         }
         .gift__desc {
@@ -25,12 +25,11 @@
     }
 }
 
-
 .gift__icon {
     width: 86px;
     height: 86px;
     min-height: 86px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     border-radius: 50%;
     box-shadow: 0 10px 21px rgba(31, 190, 185, 0.75);
     background-image: linear-gradient(to top, #01abce 0%, #7ac398 100%);
