@@ -3,6 +3,7 @@
     position: absolute;
     top: 25px;
     left: 0;
+    z-index: 5;
 }
 
 .header__logo {
@@ -13,6 +14,15 @@
 
 .header__menu-btn {
     display: none;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    svg {
+        transition: transform 0.25s;
+    }
 }
 
 .header__inner {
@@ -20,3 +30,44 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.header__menu {
+    transform: translateX(-100vmax);
+    transition: transform 0.25s;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .header {
+        top: 0;
+        position: fixed;
+    }
+    .header__inner {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 0 15px;
+    }
+    .header__menu {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 0 15px 20px;
+    }
+    .header__menu-btn {
+        display: block;
+    }
+    .header__menu.isOpened {
+        transform: translateX(0);
+        transition: transform 0.25s;
+        padding: 10px 15px;
+    }
+    .header__menu-btn.isOpened {
+        svg {
+            transform: rotate(90deg);
+            transition: transform 0.25s;
+        }
+    }
+    .header__phone {
+        display: none;
+    }
+}
+
+
+
+

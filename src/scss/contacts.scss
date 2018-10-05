@@ -12,3 +12,12 @@
     padding: 170px 0 167px;
     background-color: #e3e4da;
 }
+
+@media screen and (max-width: $breakpoint-small) {
+    .contacts__tel {
+        padding: 50px 0 0;
+    }
+    .contacts__title {
+        font-size: 50px;
+    }
+}

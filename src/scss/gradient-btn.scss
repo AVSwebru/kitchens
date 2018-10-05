@@ -3,12 +3,18 @@
     border-image: linear-gradient(to right, #7ac398,#01abce) 1 / 1px;
     background-color: transparent;
     transition: background-image 0.25s;
-    padding: 11px 43px;
+    padding: 10px 43px;
     color: #fff;
     font-size: 15px;
     cursor: pointer;
     &:hover {
         background-image: linear-gradient(to bottom, #7ac398, #01abce);
         transition: background-image 0.25s;
+    }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .gradient-btn {
+        padding: 10px 15px;
     }
 }

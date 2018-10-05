@@ -16,7 +16,7 @@
     color: #2c2c2c;
     font-size: 19px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1;
 }
 
 .contacts-tel__rightside {
@@ -34,10 +34,35 @@
 }
 
 .contacts-tel__number {
+    display: block;
     padding: 10px 20px;
     background-color: #add301;
+    text-align: center;
     color: #2c2c2c;
     font-size: 36px;
     font-weight: 700;
     line-height: 1;
+    &:hover {
+        color: #2c2c2c; 
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .contacts-tel {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .contacts-tel__leftside {
+        margin-bottom: 20px;
+    }
+    .contacts-tel__rightside {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .contacts-tel__number {
+        font-size: 24px;
+    }
 }

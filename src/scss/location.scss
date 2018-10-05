@@ -44,3 +44,12 @@
         border: 5px solid rgba(229, 229, 229, 0.48);
     }
 }
+
+@media screen and (max-width: $breakpoint-large) {
+    .location {
+        grid-template-columns: 100%;
+    }
+    .location__desc {
+        margin-bottom: 30px;
+    }
+}

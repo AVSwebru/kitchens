@@ -49,3 +49,12 @@
         transition: box-shadow 0.25s, background-image 0.25s;
     }
 }
+
+@media screen and (max-width: $breakpoint-medium) {
+    .variants__title {
+        text-align: center;
+    }
+    .variants__grid {
+        justify-content: center;
+    }
+}

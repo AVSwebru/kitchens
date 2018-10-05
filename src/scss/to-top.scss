@@ -1,8 +1,8 @@
 .to-top {
     position: fixed;
-    bottom: 3%;
+    bottom: 90px;
     right: 3%;
-    z-index: 5;
+    z-index: 3;
     padding: 13px 18px;
     background-color: #fff;
     &:hover {
@@ -17,4 +17,10 @@
 .to-top__text {
     color: #979891;
     font-size: 16px;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .to-top__text {
+      display: none;
+    }
 }

@@ -2,4 +2,11 @@
     position: relative;
     bottom: -92px;
     left: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .fabric-slider {
+        position: static;
+    }
 }
