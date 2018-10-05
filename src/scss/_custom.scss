@@ -5,10 +5,16 @@ $global-font-family: 'Roboto', sans-serif;
 
 $base-color:#676767;
 
+$modal-padding-horizontal: 0;
+
 $container-max-width: 1140px;
 $global-medium-gutter: 15px;
 
-$modal-dialog-width: 360px;
+$table-cell-padding-vertical: 8px;
+$table-cell-padding-horizontal: 14px;
+$global-border-width: 0;
+
+$thumbnav-margin-horizontal: 4px;
 
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";

@@ -1,7 +1,8 @@
 .to-top {
-    position: absolute;
-    right: 0;
-    top: -26px;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 5;
     padding: 13px 18px;
     background-color: #fff;
     &:hover {

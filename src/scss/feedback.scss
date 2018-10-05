@@ -49,9 +49,10 @@
     background-image: linear-gradient(to top, #abd002 0%, #bae107 100%);
     transition: background-image 0.25s;
     border: none;
+    border-radius: 2px;
     cursor: pointer;
     font-size: 15px;
-    border-radius: 2px;
+    line-height: 1;
     &:hover {
         background-image: linear-gradient(to top, #bae107 0%, #abd002 100%);
         transition: background-image 0.25s;
