@@ -23,6 +23,11 @@
     }
 }
 
+.intro__filter-btn {
+    display: none;
+    margin: 50px 0 10px;
+}
+
 @media screen and (max-width: $breakpoint-large) {
     .intro {
         padding: 150px 0 35px;
@@ -40,5 +45,8 @@
     .intro__title {
         margin-right: 0;
         font-size: 45px;
+    }
+    .intro__filter-btn {
+        display: block;
     }
 }

@@ -26,10 +26,8 @@
                    <span>+7 (473)</span> 234 56 45
                 </a>
                 <button class="header__menu-btn" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 612 612">
-                        <g fill="#FFF">
-                            <path d="M604.267 194.727c4.257 0 7.733-3.644 7.733-7.733v-40.169c0-4.256-3.283-7.733-7.733-7.733H7.733c-4.256 0-7.733 3.644-7.733 7.733v40.169c0 4.256 3.283 7.733 7.733 7.733h596.534zM0 326.084c0 4.256 3.283 7.733 7.733 7.733h596.533c4.256 0 7.733-3.645 7.733-7.733v-40.169c0-4.284-3.283-7.733-7.733-7.733H7.733c-4.256 0-7.733 3.645-7.733 7.733v40.169zM0 465.175c0 4.256 3.283 7.733 7.733 7.733h596.533c4.256 0 7.733-3.645 7.733-7.733v-40.169c0-4.256-3.283-7.732-7.733-7.732H7.733c-4.256 0-7.733 3.644-7.733 7.732v40.169z"/>
-                        </g>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 459 459">
+                        <path fill="#fff" d="M0 382.5h459v-51H0v51zM0 255h459v-51H0v51zM0 76.5v51h459v-51H0z"/>
                     </svg>
                 </button>  
             </div>
@@ -43,7 +41,8 @@
                     Какая кухня<br>
                     <span>вам нужна?</span>
                 </div>
-                <form class="filter">
+                <button class="intro__filter-btn green-btn js-show-filter">Выбрать кухню</button>
+                <form class="filter js-filter">
                     <div class="filter__inner">
                         <fieldset class="filter__fieldset">
                             <legend class="filter__legend">Цена</legend>
@@ -85,7 +84,7 @@
                             </div>
                         </fieldset>
                     </div>  
-                    <button class="filter__btn" type="submit">Подобрать</button>
+                    <button class="filter__btn green-btn js-filter-btn" type="submit">Подобрать</button>
                 </form>
             </div>
         </div>
@@ -600,7 +599,7 @@
                             Нажимая «Отправить», вы даете согласие на обработку <a href="#">персональных данных</a>
                         </div>
                     </form>
-                    <button class="credit__callback" type="button" data-uk-toggle="target: #feedback">Заказать звонок</button>
+                    <button class="credit__callback green-btn" type="button" data-uk-toggle="target: #feedback">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -804,9 +803,9 @@
                     <div class="footer__top-leftside">
                         <nav class="footer__nav">
                             <ul>
-                                <li><a href="#">Кухни</a></li>
-                                <li><a href="#">Оплата</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#" data-uk-toggle="target: #kitchen">Кухни</a></li>
+                                <li><a href="#" data-uk-toggle="target: #payment">Оплата</a></li>
+                                <li><a href="#" data-uk-toggle="target: #contacts">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -876,7 +875,7 @@
                     Нажимая «Отправить», вы даете согласие на обработку <a href="#">персональных данных</a>
                 </div>
             </form>
-            <button class="uk-modal-close-outside uk-position uk-position-top-right" type="button" data-uk-close></button>
+            <button class="feedback__close-btn uk-modal-close-outside uk-position uk-position-top-right" type="button" data-uk-close></button>
         </div>
     </div>
     <div id="kitchen" uk-modal>
@@ -938,7 +937,7 @@
                         <div class="kitchen__price">
                             35 000 ₽
                         </div>
-                        <table class="kitchen__table uk-table uk-table-striped">
+                        <table class="kitchen__table uk-table uk-table-striped uk-table-responsive">
                             <tr>
                                 <td>Корпус</td>
                                 <td>Бежевый</td>
@@ -1006,7 +1005,7 @@
                     </div>
                 </div>
             </div>
-            <button class="uk-modal-close-outside uk-position uk-position-top-right" type="button" data-uk-close></button>
+            <button class="kitchen__close-btn uk-modal-close-outside uk-position uk-position-top-right" type="button" data-uk-close></button>
         </div>
     </div>
     <script src="bundle.js"></script>
