@@ -1,5 +1,5 @@
 .credit {
-    padding: 25px 0 120px;
+    padding: 25px 0 134px;
     background-image:
         url('../img/credit-bg.png'),
         linear-gradient(to right, #79c398 15%, #02abcd 100%);
@@ -29,11 +29,12 @@
     font-weight: 800;
     line-height: 1.2;
     text-transform: uppercase;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateX(6px);
     transform-origin: 50% 50%;
     letter-spacing: -0.8px;
-    span {
-        letter-spacing: 7px;
+    span{
+        letter-spacing: 8.5px;
+        white-space: nowrap;
     }
 }
 
@@ -99,6 +100,7 @@
     position: absolute;
     top: -55px;
     left: 0;  
+    box-shadow: 2px 1px 21px rgba(76, 76, 76, 0.2);
 }
 
 .credit__callback {

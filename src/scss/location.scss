@@ -33,6 +33,7 @@
 .location__photo {
     height: 100%;
     position: relative;
+    box-shadow: 5px 5px 21px rgba(128, 128, 128, 0.8);
     &::before {
         content: '';
         position: absolute;

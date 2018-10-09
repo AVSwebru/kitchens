@@ -5,6 +5,39 @@
     text-align: center;
 }
 
+.fabric-slider__prev {
+    &::before {
+        content: '';
+        width: 70px;
+        height: 189px;
+        position: absolute;
+        top: -80px;
+        left: -20px;
+        background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.5) 30%, transparent);
+    }
+}
+
+.fabric-slider__next {
+    &::before {
+        content: '';
+        width: 70px;
+        height: 189px;
+        position: absolute;
+        top: -80px;
+        right: -20px;
+        background-image: linear-gradient(90deg,transparent 30%, rgba(0, 0, 0, 0.5));
+    }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .fabric-slider__next,
+    .fabric-slider__prev {
+        &::before {
+            display: none;
+        }
+    }
+}
+
 @media screen and (max-width: $breakpoint-small) {
     .fabric-slider {
         position: static;

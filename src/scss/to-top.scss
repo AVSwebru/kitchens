@@ -5,17 +5,24 @@
     z-index: 3;
     padding: 13px 18px;
     background-color: #fff;
+    border-radius: 2px;
+    color: #979891;
+    transition: color 0.25s;
     &:hover {
         text-decoration: none;
+        color: #000;
+        transition: color 0.25s;
+    }
+    &.sticky {
+        position: absolute;
     }
 }
 
 .to-top__arrow {
-    color: #232728;
+    transform: translateY(-2px);
 }
 
 .to-top__text {
-    color: #979891;
     font-size: 16px;
 }
 

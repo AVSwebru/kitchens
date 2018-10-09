@@ -4,6 +4,7 @@
     background-color: transparent;
     transition: background-image 0.25s;
     padding: 10px 43px;
+    box-sizing: border-box;
     color: #fff;
     font-size: 15px;
     cursor: pointer;
@@ -13,8 +14,9 @@
     }
 }
 
-@media screen and (max-width: $breakpoint-small) {
+@media screen and (max-width: $breakpoint-medium) {
     .gradient-btn {
-        padding: 10px 15px;
+        width: 170px;
+        padding: 10px;
     }
 }

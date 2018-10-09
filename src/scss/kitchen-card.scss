@@ -3,6 +3,7 @@
     background-color: #fff;
     border-radius: 2px;
     padding: 24px 17px 12px;
+    box-shadow: 2px 1px 21px rgba(76, 76, 76, 0.2);
     &:hover {
         border-image: linear-gradient(to bottom, #7ac398, #01abce) 1 / 5px;
         .kitchen-card__more {
