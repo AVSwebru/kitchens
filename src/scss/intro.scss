@@ -1,6 +1,6 @@
 .intro {
     padding: 170px 0 70px;
-    background: url('../img/intro-bg.jpg') 50% 50% no-repeat;
+    background: #010100 url('../img/intro-bg.jpg') 50% 50% no-repeat;
     background-size: cover;
     z-index: 4;
     position: relative;
@@ -13,7 +13,7 @@
 }
 
 .intro__title {
-    margin-right: 68px;
+    margin-right: 65px;
     color: #fff;
     font-size: 80px;
     font-weight: 700;

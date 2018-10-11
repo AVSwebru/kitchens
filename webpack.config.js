@@ -34,7 +34,8 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'main.css'
+                            name: 'main.css',
+                            outputPath: 'css/',
                         }
                     },
                     {
@@ -43,7 +44,7 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            url: true,
+                            url: false,
                             minimize: true
                         }
                     }, 

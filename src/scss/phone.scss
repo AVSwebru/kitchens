@@ -4,21 +4,13 @@
     background-size: 16px 16px; 
     color: #fff;
     white-space: nowrap;
+    span {
+        font-size: 15px;
+        font-weight: 400;
+    }
     &:hover {
         color: #fff;
         text-decoration: none;
         transition: color 0.25s;
-    }
-}
-
-.phone__text {
-    color: #fff;
-    transition: color 0.25s;
-    font-size: 20px;
-    font-weight: 500;
-    white-space: nowrap;
-    span {
-        font-size: 15px;
-        font-weight: 400;
     }
 }
