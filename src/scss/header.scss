@@ -1,9 +1,11 @@
 .header {
     width: 100%;
-    position: absolute;
-    top: 25px;
+    position: fixed;
+    top: 0;
+    padding: 15px 0 10px;
     left: 0;
     z-index: 5;
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .header__logo {
@@ -39,17 +41,17 @@
 
 @media screen and (max-width: $breakpoint-medium) {
     .header {
-        top: 0;
-        position: fixed;
+        padding: 0;
+        background: none;
     }
     .header__menu-btn {
         display: block;
     }
     .header__inner {
-        background: rgba(0, 0, 0, 0.9);
         margin-left: -30px;
         margin-right: -30px;
         padding: 0 15px;
+        background: rgba(0, 0, 0, 0.9);
     }
     .header__menu {
         display: flex;
